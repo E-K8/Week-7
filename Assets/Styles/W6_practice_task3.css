@@ -1,0 +1,14 @@
+.container {
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 782px 500px 660px repeat(3, 500px) 435px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 1 fr max-content 1fr;
+
+
+}

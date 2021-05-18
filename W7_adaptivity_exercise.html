@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W7 exercise</title>
+    <style>
+        .header {
+            background: #86B6e9;
+            grid-area: header;
+        }
+
+        .sidebar {
+            background: #dde986;
+            grid-area: sidebar;
+        }
+
+        .main {
+            background: #b8e986;
+            grid-area: main;
+        }
+
+        .footer {
+            background: #e9c886;
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            height: 620px;
+            width: 620px;
+            grid-template-columns: 200px 500px;
+            grid-template-rows: 100px 400px 100px;
+            grid-template-areas:
+                "header header header header"
+                "sidebar main main main"
+                "footer footer footer footer";
+        }
+
+        .nav-item {
+            padding: 5px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            width: 700px;
+        }
+
+        .pict {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>W7 practising with video</h1>
+    <div class="containt">
+        <header class="header">HEADER
+            <nav class="menu">
+                <span class="nav-item">MENU 1</span>
+                <span class="nav-item">MENU 2</span>
+                <span class="nav-item">MENU 3</span>
+            </nav>
+        </header>
+        <aside class="sidebar">SIDEBAR </aside>
+        <main class="main">CONTENT
+            <div><img class="pict" src="Assets/Images/whythrive_right.jpg" alt="picture of a girl stretching"></div>
+        </main>
+        <footer class="footer">FOOTER</footer>
+    </div>
+
+</body>
+
+</html>

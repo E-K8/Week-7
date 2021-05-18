@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Larsseit_Norm;
+    src: url('/Assets/Fonts/Larsseit.otf');
+}
+
+/* section HOME */
+.wrapper {
+    background-color: #F4F9E2;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%
+}
+
+.logo {
+    font-family: Larsseit_Norm;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: -0.035em;
+    color: #62D0DF;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+
+}
+
+.content_left {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    height: 400px;
+}
+
+.content_right {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+h1 {
+    font-family: Larsseit_Norm;
+    width: 484px;
+    height: 167px;
+    left: 179px;
+    top: 305px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 45px;
+    letter-spacing: -0.035em;
+    color: #22356F;
+}
+
+.btn {
+    font-family: Larsseit_Norm;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 32px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #62D0DF;
+    color: #ffffff;
+}
+
+.btn:focus {
+    background: #8ddf98;
+    color: rgb(27, 27, 110);
+}
+
+.intro {
+    width: 469px;
+    height: 161px;
+    left: 179px;
+    top: 491px;
+    font-family: Larsseit_Norm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 45px;
+    color: #22356F;
+}
+
+.menu {
+    text-decoration: none;
+    padding: 4px;
+    font-weight: 500;
+    color: #22356F;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
+
+.bottom {
+    margin-top: 1cm;
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FAB63E;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.bottom:active {
+    text-decoration: none;
+    background-color: #FAB63E;
+    color: #Ffffff;
+    padding: 10px;
+    font-weight: 700;
+    margin-top: 1cm;
+}
+
+/* section WHY THRIVE */
+.whythrive {
+    display: grid;
+    grid-template-columns: 7fr, 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "wl wl wl wl wl wl wl wr wr wr wr";
+    font-family: Larsseit_Norm;
+}
+
+.whythrive_left {
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+    grid-template-rows: repeat (8, 1fr);
+    grid-area: wl;
+    background-color: #62D0DF;
+    color: #FFFFFF;
+}
+
+.whythrive_heading {
+    display: grid;
+    grid-area: 3/2/4/5;
+    font-family: Larsseit;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: -0.006em;
+}
+
+.whythrive_text {
+    display: grid;
+    grid-area: 4/2/8/5;
+    font-family: Larsseit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+}
+
+.whythrive_right {
+    grid-area: wr;
+}
