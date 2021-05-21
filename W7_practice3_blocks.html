@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W7 practice 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-rows: repeat(6, 100px);
+            grid-gap: 5px;
+            font-size: 2em;
+            font-family: Roboto, sans-serif;
+        }
+
+        .container__item1 {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #ACF4B6;
+        }
+
+        .container__item2 {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #FFE975;
+        }
+
+        .container__item3 {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #FD9A5C;
+        }
+
+        .container__item4 {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #E6B4FD;
+        }
+
+        .container__item5 {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #8DFECD;
+        }
+
+        .container__item6 {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #FD9A5C;
+        }
+
+        .container__text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Colour blocks (Kate Platonova)</h2>
+    <div class="container">
+        <div class="container__item1">
+            <div class="container__text">1
+            </div>
+        </div>
+        <div class="container__item2">
+            <div class="container__text">2
+            </div>
+        </div>
+        <div class="container__item3">
+            <div class="container__text">3
+            </div>
+        </div>
+        <div class="container__item4">
+            <div class="container__text">4
+            </div>
+        </div>
+        <div class="container__item5">
+            <div class="container__text">5
+            </div>
+        </div>
+        <div class="container__item6">
+            <div class="container__text">6
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

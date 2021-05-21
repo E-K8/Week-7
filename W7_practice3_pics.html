@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W7 practice 3 with pics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        /*example 2  */
+
+        .container2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-rows: repeat(6, 100px);
+            grid-gap: 5px;
+        }
+
+        .container2>div>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* .container2__item1 {
+  color: white;
+  background-color: #ACF4B6;
+}
+ */
+        .container2__item2 {
+            color: white;
+            background-color: #ACF4B6;
+        }
+
+        .container2__item3 {
+            color: white;
+            background-color: #ACF4B6;
+        }
+
+        .container2__item4 {
+            color: white;
+            background-color: #ACF4B6;
+        }
+
+        .container2__item5 {
+            color: white;
+            background-color: #ACF4B6;
+        }
+
+        .container2__item6 {
+            color: white;
+            background-color: #ACF4B6;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Colour blocks</h1>
+
+    <div class="container1">
+        <div class="container__item1">
+            <div class="container__text">1
+            </div>
+        </div>
+        <div class="container__item2">
+            <div class="container__text">2
+            </div>
+        </div>
+        <div class="container__item3">
+            <div class="container__text">3
+            </div>
+        </div>
+        <div class="container__item4">
+            <div class="container__text">4
+            </div>
+        </div>
+        <div class="container__item5">
+            <div class="container__text">5
+            </div>
+        </div>
+        <div class="container__item6">
+            <div class="container__text">6
+            </div>
+        </div>
+    </div>
+
+    Example 2
+
+    <div class="container2">
+        <img class="container2__item1" src="Assets/Images/W6_ThriveTalk_conversation_small.jpg" />
+        <div class="container2__item2">2</div>
+        <div class="container2__item3">3</div>
+        <div class="container2__item4">4</div>
+        <div class="container2__item5">5</div>
+        <div class="container2__item6">6</div>
+    </div>
+
+</body>
+
+</html>
