@@ -174,3 +174,113 @@ h1 {
     width: 100%;
     min-width: 100%;
 }
+
+/* section ABOUT */
+.about {
+    display: grid;
+}
+
+.about__heading {
+    font-family: Larsseit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #22356F;
+    text-transform: uppercase;
+}
+
+.about__text {
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+
+    color: #22356F;
+}
+
+/* section SPORT */
+.sport {
+    display: grid;
+}
+
+.sport__heading {
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #22356f80;
+}
+
+.sport__options {
+    display: grid;
+}
+
+.sport__block {
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 29px;
+    letter-spacing: -0.006em;
+    /* change colour when background is there */
+    /* color: #FFFFFF; */
+}
+
+/* section OPTIONS */
+.options {
+    display: grid;
+}
+
+.options__block {
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 29px;
+    letter-spacing: -0.006em;
+    /* change colour when background is there */
+    /* color: #FFFFFF; */
+}
+
+/* section SERVICES */
+.services {
+    display: grid;
+}
+
+.services__options {
+    display: grid;
+}
+
+.services__heading {
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+
+    letter-spacing: -0.03em;
+
+    color: #22356F;
+}
+
+.services__text {
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+
+    color: #22356f80;
+
+}
