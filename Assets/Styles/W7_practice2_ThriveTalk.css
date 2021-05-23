@@ -39,7 +39,6 @@
 .content_left {
     display: flex;
     flex-direction: column;
-    align-items: space-around;
     height: 400px;
 }
 
@@ -129,7 +128,7 @@ h1 {
 /* section WHY THRIVE */
 .whythrive {
     display: grid;
-    grid-template-columns: 7fr, 4fr;
+    grid-template-columns: 7fr 4fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         "wl wl wl wl wl wl wl wr wr wr wr";
@@ -138,8 +137,8 @@ h1 {
 
 .whythrive_left {
     display: grid;
-    grid-template-columns: repeat (5, 1fr);
-    grid-template-rows: repeat (8, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-area: wl;
     background-color: #62D0DF;
     color: #FFFFFF;
