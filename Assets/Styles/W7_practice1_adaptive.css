@@ -1,3 +1,4 @@
+/* default styles for laptops */
 .container {
     display: grid;
     grid-template-columns: repeat (12, 1fr);
@@ -33,16 +34,14 @@
 
 }
 
-.upper_content {
-    /* border: 2px dotted blueviolet; */
+.content__upper {
     display: grid;
     grid-area: 1/1/2/3;
     width: 100%;
     text-align: center;
 }
 
-.lower_content {
-    /* border: 2px dotted blueviolet; */
+.content__lower {
     display: grid;
     grid-area: 2/1/3/3;
     grid-template-columns: repeat (2, 1fr);
@@ -55,10 +54,9 @@
     text-align: center;
 }
 
-.tab_1,
-.tab_2,
-.tab_3 {
-    /* border: 2px dotted blueviolet; */
+.content__tab1,
+.content__tab2,
+.content__tab3 {
     display: grid;
     background-color: #FEEAB9;
     height: 70%;
@@ -67,18 +65,18 @@
     align-items: center;
 }
 
-.tab_1,
-.tab_2 {
+.content__tab1,
+.content__tab2 {
     width: 90%;
     margin-bottom: 1%;
 }
 
-.tab_3 {
+.content__tab3 {
     grid-column: span 2;
     margin-top: 1%;
 }
 
-footer {
+.footer {
     background-color: #E0E0E0;
     grid-area: ft;
     display: grid;
@@ -87,14 +85,58 @@ footer {
     align-items: center;
 }
 
-.box {
+.footer__box {
     display: flex;
     background-color: white;
     height: 70%;
     width: 80%;
 }
 
-.boxtab {
+.footer__boxtab {
     margin: auto;
     padding: 20px;
+}
+
+/* adaptivity for phones */
+@media screen and (max-width: 767px) {
+    .container {
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd hd hd hd hd"
+            "sb sb sb sb sb sb sb sb sb sb sb sb"
+            "ct ct ct ct ct ct ct ct ct ct ct ct"
+            "ft ft ft ft ft ft ft ft ft ft ft ft"
+        ;
+    }
+
+    /* ERRORS: content section for phones START */
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .content__upper {
+        grid-area: 1/1/2/2;
+    }
+
+    .content__lower {
+        display: grid;
+        grid-area: 2/1/3/2;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .content__tab1,
+    .content__tab2,
+    .content__tab3 {
+        width: 95%;
+        height: 90%;
+    }
+
+    /* ERRORS: content section for phones END */
+
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+
 }
