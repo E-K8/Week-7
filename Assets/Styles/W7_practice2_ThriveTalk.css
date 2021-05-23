@@ -135,7 +135,7 @@ h1 {
     font-family: Larsseit_Norm;
 }
 
-.whythrive_left {
+.whythrive__left {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -144,7 +144,7 @@ h1 {
     color: #FFFFFF;
 }
 
-.whythrive_heading {
+.whythrive__heading {
     display: grid;
     grid-area: 3/2/4/5;
     font-family: Larsseit;
@@ -155,7 +155,7 @@ h1 {
     letter-spacing: -0.006em;
 }
 
-.whythrive_text {
+.whythrive__text {
     display: grid;
     grid-area: 4/2/8/5;
     font-family: Larsseit;
@@ -166,6 +166,11 @@ h1 {
     letter-spacing: 0em;
 }
 
-.whythrive_right {
+.whythrive__right {
     grid-area: wr;
+}
+
+.whythrive__img {
+    width: 100%;
+    min-width: 100%;
 }
